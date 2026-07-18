@@ -113,46 +113,6 @@ typing();
 
 
 
-// ===============================
-// NAVBAR EFFECT
-// ===============================
-
-
-window.addEventListener("scroll",()=>{
-
-
-const navbar =
-document.querySelector(".navbar");
-
-
-if(window.scrollY>50){
-
-
-navbar.style.boxShadow=
-"0 0 25px #00e5ff";
-
-
-}
-
-
-else{
-
-
-navbar.style.boxShadow="none";
-
-
-}
-
-
-
-});
-
-
-
-
-
-
-
 
 
 // ===============================
