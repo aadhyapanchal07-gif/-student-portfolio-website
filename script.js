@@ -145,36 +145,14 @@ el.style.transition=
 
 
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
 
-
-elements.forEach(el=>{
-
-
-let position =
-el.getBoundingClientRect().top;
-
-
-if(position < window.innerHeight-100){
-
-
-el.style.opacity="1";
-
-
-el.style.transform=
-"translateY(0)";
-
-
-}
-
-
+    setTimeout(() => {
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+    }, 1200);
 });
-
-
-});
-
-
-
 
 
 
